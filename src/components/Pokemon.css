@@ -1,0 +1,72 @@
+/* Page container */
+body {
+  margin: 0;
+  background: #e2d47f;
+  font-family: "Segoe UI", sans-serif;
+  color:black;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.2rem;
+  color: #2c3e50;
+}
+
+/* Search box wrapper */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+/* Search input */
+.search-box input {
+  width: 500px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background:rgb(217, 214, 214);
+  color:#000000;
+  font-weight: bold;
+}
+
+.search-box input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 4px rgba(25, 118, 210, 0.15);
+}
+
+/* Pokemon list grid */
+ul {
+  list-style: none;
+  padding: 0 20px 20px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+/* Loading & error text */
+h1,
+h2 {
+  text-align: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+/* Pokemon list grid */
+ul {
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  gap: 30px;
+  justify-content: center; /* center grid on screen */
+}
+
