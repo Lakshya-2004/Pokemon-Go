@@ -3,7 +3,7 @@
 .pokemon-card {
   width: 400px;
   height: 500px;
-  background: #f0c858;
+  background: wheat;
   border: 3px solid #000;
   border-radius: 20px;
   padding: 24px;
@@ -40,8 +40,8 @@
 }
 
 .pokemon-card img {
-  max-width: 260px;
-  max-height: 260px;
+  max-width: 200px;
+  max-height: 200px;
   object-fit: contain;
 }
 
@@ -63,7 +63,7 @@
   font-size: 2rem;
   font-weight: bold;
   text-transform: capitalize;
-  background-color: #f0f4ff;
+  background-color: #7d99e6;
   border: 2px solid #1976d2;
   border-radius: 15px;
   padding: 8px;

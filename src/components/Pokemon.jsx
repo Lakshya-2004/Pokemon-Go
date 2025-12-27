@@ -7,7 +7,8 @@ export const Pokemon = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [searchip, setSearchip] = useState("");
-    const API = "https://pokeapi.co/api/v2/pokemon?limit=124";
+    const [location,setLocation]=useState([]);
+    const API = "https://pokeapi.co/api/v2/pokemon?limit=150 ";
     const FetchApi = async () => {
         try {
             const res = await fetch(API);
@@ -33,6 +34,7 @@ export const Pokemon = () => {
     }
     useEffect(() => {
         FetchApi();
+       
     }, []);
     if (loading) {
         return <h1>Loading...</h1>;
