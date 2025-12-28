@@ -44,9 +44,9 @@ h1 {
 ul {
   list-style: none;
   padding: 30px;
-  margin-top: 20px;
+  margin-top: 70px;
   display: grid;
-  grid-template-columns: repeat(4, 350px);
+  grid-template-columns: repeat(3, 420px);
   gap: 5px;
   justify-content: center;
 }
