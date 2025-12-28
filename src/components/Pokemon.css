@@ -3,7 +3,7 @@ body {
   margin: 0;
   background: #e2d47f;
   font-family: "Segoe UI", sans-serif;
-  color:black;
+  color: black;
 }
 
 /* Heading */
@@ -30,8 +30,8 @@ h1 {
   border: 2px solid #ddd;
   outline: none;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  background:rgb(217, 214, 214);
-  color:#000000;
+  background: rgb(217, 214, 214);
+  color: #000000;
   font-weight: bold;
 }
 
@@ -43,11 +43,32 @@ h1 {
 /* Pokemon list grid */
 ul {
   list-style: none;
-  padding: 0 20px 20px;
+  padding: 30px;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(3, 500px);
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Image styling + animation */
+img {
+  height: 200px;
+  width: 200px;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+              filter 0.45s ease;
+}
+
+/* Hover directly on image */
+img:hover {
+  transform: scale(1.1) rotate(4deg) translateY(-6px);
+  filter: drop-shadow(0 18px 25px rgba(3, 213, 255, 0.6));
+}
+
+/* Hover on card → image animates */
+.pokemon-card:hover img {
+  transform: scale(1.1) rotate(4deg) translateY(-6px);
+  
 }
 
 /* Loading & error text */
@@ -55,18 +76,3 @@ h1,
 h2 {
   text-align: center;
 }
-img{
-    height: 200px;
-    width: 200px;
-}
-/* Pokemon list grid */
-ul {
-  list-style: none;
-  padding: 30px;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 500px);
-  gap: 30px;
-  justify-content: center; /* center grid on screen */
-}
-

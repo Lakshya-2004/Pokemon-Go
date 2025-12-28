@@ -15,7 +15,11 @@ export const Pokemoncard = ({ cur }) => {
     <span>Weight: {cur.weight}</span>
     <span>Type: {cur.types.map(t => t.type.name).join(", ")}</span>
     <span>Abilities: {cur.abilities.map(a => a.ability.name).join(", ")}</span>
-    {/* <span>Location:{location.name}</span> */}
+    <span>Experience: {cur.base_experience}</span>
+    <span>HP: {cur.stats[0].base_stat}</span>
+    <span>Speed: {cur.stats[5].base_stat}</span>
+    <span>Special Attack: {cur.stats[3].base_stat}</span>
+    <span>Attack: {cur.stats[1].base_stat}</span>
   </div>
 </div>
  
