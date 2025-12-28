@@ -44,10 +44,10 @@ h1 {
 ul {
   list-style: none;
   padding: 30px;
-  margin: 0;
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 500px);
-  gap: 30px;
+  grid-template-columns: repeat(4, 350px);
+  gap: 5px;
   justify-content: center;
 }
 

@@ -46,7 +46,7 @@ export const Pokemon = () => {
     const searchctx=pokemon.filter((curtxt)=>curtxt.name.toLowerCase().includes(searchip.toLowerCase()));
     return (
         <>
-            <h1>Pokemon Component</h1>
+            <h1> Let's Catch the Pokemon ...</h1>
 
             <div className="search-box">
                 <input
